@@ -22,7 +22,7 @@ function Sumar ()
 	
 	
 
-	alert(suma); 
+	alert("La suma de los importes es: "+suma); 
 }
 function Promedio () 
 {
@@ -41,7 +41,7 @@ function Promedio ()
 
 	promedio = (producto1+producto2+producto3)/3;
 
-	alert(promedio); 
+	alert("El promedio de los importes es: "+promedio); 
 }
 function PrecioFinal () 
 {
@@ -60,5 +60,5 @@ function PrecioFinal ()
 
 	precioFinal = (producto1+producto2+producto3)*1.21;
 
-	alert(precioFinal); 
+	alert("El importe final es: "+precioFinal); 
 }

@@ -22,9 +22,41 @@ function Rectangulo ()
 }
 function Circulo () 
 {
+	var radio;
+	var pi = 3.14159265359;
+	var perimetro;
+
+	radio = document.getElementById('Radio').value;
 	
+	radio = parseInt(radio);
+	
+
+	perimetro = 2*pi*radio;
+
+	alert("Se necesitan "+perimetro+" metros de alambre.");
+
 }
 function Materiales () 
 {
-	
+	var largo;
+	var ancho;
+	var superficie;
+	var cal;
+	var cemento;
+
+	largo = document.getElementById('Largo').value;
+	ancho = document.getElementById('Ancho').value;
+
+	largo = parseInt(largo);
+	ancho = parseInt(ancho);
+
+	superficie = largo*ancho;
+
+	cemento = superficie*2;
+	cal = superficie*3;
+
+	alert("Se necesitan "+cemento+" bolsas de semento. Y "+cal+" bolsas de cal.");
+
+
+
 }
