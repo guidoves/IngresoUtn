@@ -24,23 +24,49 @@ function CalcularPrecio ()
 
  			if (cantidad == 3){
 
- 				descuento = 0.85;
+ 				descuento = 0.85; //descuento 15%
  				
  			}else{
 
- 				if (cantidad == 5){
+ 				if (cantidad == 4){
 
- 					descuento = 0.60;
+ 					descuento = 0.75; //descuento 25%
 
  				}else{
 
- 					if()
+ 					if( cantidad == 5){
+
+ 						descuento = 0.6; //descuento 40%
+ 					}else{
+
+ 						if( cantidad >= 6){
+
+ 							descuento = 0.5; //descuento 50%
+
+ 						}else{
+
+ 							descuento = 1; // sin descuento.
+ 						}
+
+
+ 					}
  				}
  			}
 
  		break;	
 
+ 		case "FelipeLamparas" :
+
+ 			if (cantidad == 4){
+
+ 				descuento = 0.75; //descuento 25%
+ 			}
+
+
+
  	}	//switch (marca)
+
+
 
 
  	var precioNeto = precioBruto*descuento;
