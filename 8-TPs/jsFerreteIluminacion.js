@@ -42,34 +42,99 @@ function CalcularPrecio ()
  						if( cantidad >= 6){
 
  							descuento = 0.5; //descuento 50%
-
  						}else{
 
- 							descuento = 1; // sin descuento.
+ 							descuento = 1; // sin descuento
+
+ 							}						
  						}
-
-
  					}
  				}
- 			}
 
- 		break;	
+ 				break; 	
 
- 		case "FelipeLamparas" :
+ 				case "FelipeLamparas" :
 
  			if (cantidad == 4){
 
  				descuento = 0.75; //descuento 25%
- 			}
+ 			
+ 			}else{
 
+ 				if (cantidad == 3){
 
+ 					descuento = 0.9; //descuento 10%
+ 				
+ 				}else{
 
- 	}	//switch (marca)
+ 					if (cantidad == 5){
 
+ 						descuento = 0.7; //descuento 30%
+ 					
+ 					}else{
 
+ 						if (cantidad >= 6){
+
+ 							descuento = 0.5; //descuento 50%
+ 						
+ 						}else{
+
+ 							descuento = 1; //sin descuento
+ 							
+ 							}	
+ 						}
+ 					}
+ 				}
+
+ 				break;
+
+ 				default:
+
+ 					if (cantidad >= 6){
+
+ 						descuento = 0.5; //descuento 50%
+
+ 					}else{
+
+ 						if (cantidad == 5){
+
+ 							descuento = 0.7; //descuento 30%
+ 						
+ 						}else{
+
+ 							if (cantidad == 4){
+
+ 								descuento = 0.8; //descuento 20%
+ 							
+ 							}else{
+
+ 								if (cantidad ==3){
+
+ 									descuento = 0.95; //descuento 5%
+ 								
+ 								}else{
+
+ 									descuento = 1; //sin descuento
+ 								}
+ 							}
+ 						}
+ 					}
+
+ 					break;
+
+ 			}//switch (marca)
+ 		
 
 
  	var precioNeto = precioBruto*descuento;
  	document.getElementById('precioDescuento').value=precioNeto;
+
+ 	if(precioNeto > 120){
+
+ 		var ingresosBrutos;
+ 		ingresosBrutos = precioNeto*0.1;
+
+ 		alert("Usted pago "+ingresosBrutos+"$ de impuestos.");
+ 	}
 
 }//function CalcularPrecio () 
