@@ -21,6 +21,9 @@ function ComenzarIngreso ()
  	while (edad < 18 || edad > 90){
 
  		edad=prompt("Ingrese edad: ");
+ 		while(isNaN(edad)){
+ 			edad=prompt("Ingreso incorrecto. Ingrese edad: ");
+ 		}
 
  	}
  	document.getElementById('Edad').value=edad;
@@ -48,6 +51,12 @@ function ComenzarIngreso ()
  	while (estadoCivil < 1 || estadoCivil > 4){
 
  		estadoCivil=prompt("Ingrese estado civil. 1(SOLTERO) 2(CASADO) 3(DIVIORCIADO) 4(VIUDO):");
+ 		
+ 		while(isNaN(estadoCivil)){
+
+ 			estadoCivil=prompt("Ingreso invalido.Ingrese estado civil. 1(SOLTERO) 2(CASADO) 3(DIVIORCIADO) 4(VIUDO):");
+
+ 		}
  	}
 
  	// muestra por id si es soltero,casado,divorciado o viudo.
@@ -81,6 +90,12 @@ function ComenzarIngreso ()
  	while (sueldoBruto < 8000){
 
  		sueldoBruto=prompt("Ingrese sueldo bruto:");
+
+ 		while(isNaN(sueldoBruto)){
+
+ 			sueldoBruto=prompt("Ingreso invalido. Ingrese sueldo bruto:");
+
+ 		}
  	}
 
  	document.getElementById('Sueldo').value=sueldoBruto;
@@ -89,6 +104,11 @@ function ComenzarIngreso ()
  	while(numeroLegajo < 1000 || numeroLegajo > 9999){
 
  		numeroLegajo=prompt("Ingrese numero de legajo");
+ 		
+ 		while(isNaN(numeroLegajo)){
+
+ 			numeroLegajo=prompt("Ingreso invalido. Ingrese numero de legajo");
+ 		}
 
  	}
 

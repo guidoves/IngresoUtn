@@ -11,7 +11,7 @@ function FahrenheitCentigrados ()
 	// convierte 
 	ingreso = (ingreso-32)*(5/9);
 	// muestra resultado
-	alert("Resultado: "+ingreso);
+	alert("Resultado: "+ingreso+" grados centígrados.");
 }
 
 function CentigradosFahrenheit () 
@@ -21,5 +21,5 @@ function CentigradosFahrenheit ()
 	//convierte
 	ingreso = (ingreso*(9/5))+32;
 	// muestra resultado
-	alert("Resultado: "+ingreso);
+	alert("Resultado: "+ingreso+" grados fahrenheit.");
 }
